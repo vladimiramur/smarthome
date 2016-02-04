@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+<head>
+
+</head>
+<body>
+<h1>Quad Web Relay</h1>
+<div>Relay 1:
+    <form action="{% url 'polls:my_swich' %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Toggle" id="toggle1" />
+    </form>
+</div>
+</body>
+</head>
+</html>
